@@ -31,5 +31,7 @@ Then use it in a project::
 
 Features
 --------
+* Template Tags
+* Models
 
 * TODO
