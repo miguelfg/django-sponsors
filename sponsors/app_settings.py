@@ -6,7 +6,7 @@ class AppSettings(object):
     def _setting(self, name, dflt):
         from django.conf import settings
         getter = getattr(settings,
-                         'ALLAUTH_SETTING_GETTER',
+                         'SPONSOR_SETTING_GETTER',
                          lambda name, dflt: getattr(settings, name, dflt))
         return getter(name, dflt)
 
