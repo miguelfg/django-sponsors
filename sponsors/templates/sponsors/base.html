@@ -1,21 +1,57 @@
+{% load staticfiles %}
+{% load i18n %}
 
-{% comment %}
-As the developer of this package, don't place anything here if you can help it
-since this allows developers to have interoperability between your template
-structure and their own.
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block css %}
+            <link rel="stylesheet" href="{% static "sponsors/css/sponors.css" %}">
+        {% endblock %}
 
-Example: Developer melding the 2SoD pattern to fit inside with another pattern::
+        <title>{% block title %}{% endblock %}</title>
 
-    {% extends "base.html" %}
-    {% load static %}
+        {% block extra_css %}
+        {% endblock %}
 
-    <!-- Their site uses old school block layout -->
-    {% block extra_js %}
+        {% block extra_js %}
+        {% endblock %}
 
-        <!-- Your package using 2SoD block layout -->
-        {% block javascript %}
-            <script src="{% static 'js/ninja.js' %}" type="text/javascript"></script>
-        {% endblock javascript %}
+        {% block extra_font %}
+        {% endblock %}
 
-    {% endblock extra_js %}
-{% endcomment %}
+    </head>
+    <body>
+        {% block tooltips %}
+        {% endblock tooltips %}
+
+        <div class="page-container">
+
+            <div class="page-header">
+                {% block page_header %}
+                {% endblock %}
+            </div>
+
+            <div class='content'>
+                {% block breadcrumbs %} {% endblock %}
+
+                <div id="message"></div>
+
+                {% block menu %}{% endblock %}
+
+                {% block caption %}{% endblock %}
+
+                {% block content %}{% endblock content %}
+            </div>
+
+            <footer class="clearfix" role="contentinfo">
+                {% block footer %}
+                {% endblock %}
+            </footer>
+        </div>
+
+        {% block extra_body %}
+        {% endblock %}
+
+    </body>
+
+</html>
