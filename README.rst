@@ -11,7 +11,7 @@ Django Sponsors
 .. image:: https://coveralls.io/repos/miguelfg/django-sponsors/badge.png?branch=master
     :target: https://coveralls.io/r/miguelfg/django-sponsors?branch=master
 
-Django App to manage project sponsors
+Django App to easily manage Django projects sponsors
 
 Documentation
 -------------
@@ -21,9 +21,26 @@ The full documentation is at https://django-sponsors.readthedocs.org.
 Quickstart
 ----------
 
-Install Django Sponsors::
+Install Django Sponsors:
+
+1. Using pip::
 
     pip install django-sponsors
+
+2. Add the ``sponsors`` application to ``INSTALLED_APPS`` in your settings file::
+
+    INSTALLED_APPS = (
+        ...
+        'sponsors',
+        ...
+    )
+3. Sync database::
+
+    ``$ ./manage.py syncdb``  or
+    ``$ ./manage.py migrate``
+
+**Important:** South 1.0 or greater is required to run migrations.
+
 
 Then use it in a project:
 

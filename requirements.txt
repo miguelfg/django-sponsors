@@ -1,3 +1,5 @@
 django>=1.5.1
 wheel==0.24.0
 # Additional requirements go here
+python-dateutil==2.4.2
+django-stdimage==1.2.2
