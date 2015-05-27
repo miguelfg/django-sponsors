@@ -20,8 +20,8 @@ branches:
   - master
 
 script:
+  - python manage.py test sponsors
   - coverage run --source sponsors runtests.py --settings=sponsors.app_settings
-#  - python manage.py test sponsors --settings=sponsors.app_settings
 
 
 # report coverage to coveralls.io
