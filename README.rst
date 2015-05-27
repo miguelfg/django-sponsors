@@ -79,6 +79,14 @@ To show gold and silver sponsors with their default gold and silver styles (see 
     {% show_sponsors 'gold,silver' %}
 
 
+Settings
+--------
+* SPONSOR_EXPIRATES = False
+* SPONSOR_EXPIRE_ON_MONTHS = 12
+* SPONSOR_LOGO_WIDTH = 200
+* SPONSOR_LOGO_HEIGHT = None
+
+
 Features
 --------
 * Template Tags
