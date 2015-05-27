@@ -18,8 +18,8 @@ Documentation
 
 The full documentation is at https://django-sponsors.readthedocs.org.
 
-Quickstart
-----------
+Installation
+------------
 
 Install Django Sponsors:
 
@@ -60,6 +60,9 @@ This will copy static sponsors.css into the directory given by the STATIC_ROOT s
 
 This will give url access to sponsors' views, not many in the very firsts versions :-(
 
+
+Usage
+-----
 
 Then use it in a project:
 
