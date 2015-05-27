@@ -21,9 +21,9 @@ branches:
   - master
 
 script:
-  - django-admin.py test sponsors --settings=sponsors.tests.settings
-  - coverage run --source sponsors runtests.py
-  - coverage run --source sponsors manage.py test sponsors
+  - coverage run --source sponsors runtests.py sponsors
+#  - django-admin.py test sponsors --settings=sponsors.tests.settings
+#  - coverage run --source sponsors manage.py test sponsors
 
 
 # report coverage to coveralls.io

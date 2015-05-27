@@ -20,12 +20,6 @@ try:
         ],
         SITE_ID=1,
         NOSE_ARGS=['-s'],
-
-        SPONSOR_EXPIRATES = False,
-        SPONSOR_EXPIRE_ON_MONTHS = 12,
-        SPONSOR_LOGO_WIDTH = 200,
-        SPONSOR_LOGO_HEIGHT = None,
-
     )
 
     try:

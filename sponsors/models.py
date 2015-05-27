@@ -6,7 +6,7 @@ from stdimage.validators import MinSizeValidator
 
 from django.db import models
 from django.utils.translation import ugettext as _
-from django.conf import settings
+from . import app_settings
 
 
 class Sponsor(models.Model):
@@ -33,11 +33,11 @@ class Sponsor(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    expires_on = models.DateTimeField(default=datetime.datetime.now()+relativedelta(months=+settings.SPONSOR_EXPIRE_ON_MONTHS))
-    does_expire = models.BooleanField(default=settings.SPONSOR_EXPIRATES, null=False, blank=True)
+    expires_on = models.DateTimeField(default=datetime.datetime.now()+relativedelta(months=+app_settings.SPONSOR_EXPIRE_ON_MONTHS))
+    does_expire = models.BooleanField(default=app_settings.SPONSOR_EXPIRATES, null=False, blank=True)
     type = models.PositiveIntegerField(choices=SPONSOR_TYPES, default=0, null=False, blank=True)
-    width = models.PositiveIntegerField(default=settings.SPONSOR_LOGO_WIDTH, null=False, blank=True)
-    height = models.PositiveIntegerField(default=settings.SPONSOR_LOGO_HEIGHT, null=True, blank=True)
+    width = models.PositiveIntegerField(default=app_settings.SPONSOR_LOGO_WIDTH, null=False, blank=True)
+    height = models.PositiveIntegerField(default=app_settings.SPONSOR_LOGO_HEIGHT, null=True, blank=True)
 
     def __unicode__(self):
         return '{} - {}'.format(self.name, self.type)
