@@ -85,6 +85,14 @@ Features
 * Models
 
 
+Tests
+-----
+To run the tests on 'sponsors' application, simply type the following command::
+
+    $ python manage.py test sponsors
+
+
+
 TODOs
 -----
 * Use thumbnails?
