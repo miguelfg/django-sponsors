@@ -21,5 +21,6 @@ class SponsorsTagTest(TestCase):
 
     def test_tag_show_platinum_ok(self):
         mommy.make('Sponsor', type=1)
-        rendered = self.TEMPLATE.render(Context({}))
+        t = Template("{% load sponsors_extras %} {% show_sponsors 'platinum' %}")
+        rendered = t.render(Context({}))
         self.assertIn('<div class="sponsors platinum', rendered)
