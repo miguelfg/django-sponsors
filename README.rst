@@ -41,6 +41,25 @@ Install Django Sponsors:
 
 **Important:** South 1.0 or greater is required to run migrations.
 
+4. Run the collectstatic management command::
+
+    ``$ /manage.py collectstatic``
+
+This will copy static sponsors.css into the directory given by the STATIC_ROOT setting.
+
+5. Load in your template the sponsors.css file like this::
+
+    <link rel="stylesheet" href="{% static "sponsors/css/sponors.css" %}">
+
+This will copy static sponsors.css into the directory given by the STATIC_ROOT setting.
+
+
+6. [OPTIONAL] Add sponsors urls into your project's urls.py file::
+
+    (r'^sponsors/', include('sponsors.urls')),
+
+This will give url access to sponsors' views, not many in the very firsts versions :-(
+
 
 Then use it in a project:
 
