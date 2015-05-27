@@ -26,7 +26,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 setup(
     name='Django Sponsors',
     version=version,
-    description="""Django App to manage project sponsors""",
+    description="""Django App to easily manage project sponsors""",
     long_description=readme + '\n\n' + history,
     author='Miguel Fiandor',
     author_email='miguel.fiandor.gutierrez@gmail.com',
@@ -37,14 +37,14 @@ setup(
     include_package_data=True,
     install_requires=[
     ],
-    license="BSD",
+    license="MIT",
     zip_safe=False,
     keywords='django-sponsors',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 2 - Alpha',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
