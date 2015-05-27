@@ -22,10 +22,8 @@ branches:
 
 script:
   - django-admin.py test sponsors --settings=sponsors.tests.settings
-  - python manage.py test sponsors --settings=sponsors.app_settings
-  - coverage run --source sponsors runtests.py --settings=sponsors.app_settings
-  - coverage run manage.py test sponsors
-  - coverage run manage.py test sponsors --settings=sponsors.app_settings
+  - coverage run --source sponsors runtests.py
+  - coverage run --source sponsors manage.py test sponsors
 
 
 # report coverage to coveralls.io
