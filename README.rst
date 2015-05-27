@@ -92,3 +92,8 @@ TODOs
 * More documentation
 * Sponsor Join Form
 * Sponsor Join View
+
+
+License
+-------
+MIT License. See `LICENSE https://github.com/miguelfg/django-sponsors/blob/master/LICENSE>`_.
