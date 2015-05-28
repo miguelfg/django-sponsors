@@ -35,8 +35,7 @@ setup(
         'sponsors',
     ],
     include_package_data=True,
-    install_requires=[
-    ],
+    install_requires=['python-dateutil', 'django-stdimage'],
     license="MIT",
     zip_safe=False,
     keywords=['django', 'sponsors', 'sponsor', 'logos', 'logo'],
