@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 import datetime
 from dateutil.relativedelta import relativedelta
 from model_mommy import mommy

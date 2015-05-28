@@ -16,10 +16,10 @@ DATABASES = {
 INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.auth',
-    'tempus'
+    'sponsors'
 )
 
-ROOT_URLCONF = 'tempus.tests.urls'
+ROOT_URLCONF = 'sponsors.tests.urls'
 
 SECRET_KEY = 'asfdasdf'
 

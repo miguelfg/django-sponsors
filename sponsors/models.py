@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 import datetime
 from dateutil.relativedelta import relativedelta
 from stdimage.models import StdImageField
@@ -14,11 +15,11 @@ class Sponsor(models.Model):
     Model for ...
     """
     SPONSOR_TYPES = (
-        (0, _(u'NONE')),
-        (1, _(u'PLATINUM')),
-        (2, _(u'GOLD')),
-        (3, _(u'SILVER')),
-        (4, _(u'BRONCE')),
+        (0, _('NONE')),
+        (1, _('PLATINUM')),
+        (2, _('GOLD')),
+        (3, _('SILVER')),
+        (4, _('BRONCE')),
     )
     SPONSOR_TYPES_REV = dict((y, x) for x, y in SPONSOR_TYPES)
 
