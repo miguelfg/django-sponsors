@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from unittest import skip
 from model_mommy import mommy
 
 from django.core.urlresolvers import reverse
