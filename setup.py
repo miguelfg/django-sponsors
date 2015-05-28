@@ -24,7 +24,7 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
-    name='Django Sponsors',
+    name='django-sponsors',
     version=version,
     description="""Django App to easily manage project sponsors""",
     long_description=readme + '\n\n' + history,
@@ -39,7 +39,7 @@ setup(
     ],
     license="MIT",
     zip_safe=False,
-    keywords='django-sponsors',
+    keywords=['django', 'sponsors', 'sponsor', 'logos', 'logo'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Framework :: Django',

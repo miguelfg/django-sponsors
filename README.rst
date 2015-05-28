@@ -113,3 +113,4 @@ TODOs
 License
 -------
 MIT License. See `LICENSE <https://github.com/miguelfg/django-sponsors/blob/master/LICENSE>`_.
+
