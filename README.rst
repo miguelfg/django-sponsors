@@ -103,15 +103,22 @@ To run the tests on 'sponsors' application, simply type the following command::
 
 TODOs
 -----
-* Use thumbnails?
-* More testing
-* More documentation
-* Sponsor Join Form
-* Sponsor Join View
+* add more kind of representations (columns, with descriptions, titles, ...)
+* coverage 100%
+* test logo custom sizes
+* test logo sizes by cats
+* test background colors by cats
+* Become a Sponsor View
+* Become a Sponsor Form
+* Custom logo size and create thumbnail automatically
 
 Contributing
 ------------
 Check the tips at `CONTRIBUTING <https://github.com/miguelfg/django-sponsors/blob/master/CONTRIBUTING.rst>`_.
+
+Change log
+----------
+Check the history changes `CHANGELOG <https://github.com/miguelfg/django-sponsors/blob/master/HISTORY.rst>`_.
 
 License
 -------
