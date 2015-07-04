@@ -109,8 +109,12 @@ TODOs
 * Sponsor Join Form
 * Sponsor Join View
 
+Contributing
+------------
+Check the tips at `CONTRIBUTING <https://github.com/miguelfg/django-sponsors/blob/master/CONTRIBUTING.rst>`_.
 
 License
 -------
 MIT License. See `LICENSE <https://github.com/miguelfg/django-sponsors/blob/master/LICENSE>`_.
+
 
