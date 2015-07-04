@@ -36,7 +36,7 @@ Install Django Sponsors:
     )
 3. Sync database::
 
-    ``$ ./manage.py syncdb``  or
+    ``$ ./manage.py syncdb``  and
     ``$ ./manage.py migrate``
 
 **Important:** South 1.0 or greater is required to run migrations.
