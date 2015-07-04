@@ -14,14 +14,14 @@ class Sponsor(models.Model):
     """
     Model for ...
     """
-    SPONSOR_TYPES = (
+    SPONSOR_CATEGORIES = (
         (0, _('NONE')),
         (1, _('PLATINUM')),
         (2, _('GOLD')),
         (3, _('SILVER')),
         (4, _('BRONCE')),
     )
-    SPONSOR_TYPES_REV = dict((y, x) for x, y in SPONSOR_TYPES)
+    SPONSOR_CATEGORIES_REV = dict((y, x) for x, y in SPONSOR_CATEGORIES)
 
     enabled = models.BooleanField(default=True, null=False)
     name = models.CharField(null=False, blank=False, max_length=30)
@@ -36,12 +36,12 @@ class Sponsor(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     expires_on = models.DateTimeField(default=datetime.datetime.now()+relativedelta(months=+app_settings.SPONSOR_EXPIRE_ON_MONTHS))
     does_expire = models.BooleanField(default=app_settings.SPONSOR_EXPIRATES, null=False, blank=True)
-    type = models.PositiveIntegerField(choices=SPONSOR_TYPES, default=0, null=False, blank=True)
+    category = models.PositiveIntegerField(choices=SPONSOR_CATEGORIES, default=0, null=False, blank=True)
     width = models.PositiveIntegerField(default=app_settings.SPONSOR_LOGO_WIDTH, null=False, blank=True)
     height = models.PositiveIntegerField(default=app_settings.SPONSOR_LOGO_HEIGHT, null=True, blank=True)
 
     def __unicode__(self):
-        return '{} - {}'.format(self.name, self.type)
+        return '{} - {}'.format(self.name, self.category)
 
     @classmethod
     def get_all_sponsors(cls):

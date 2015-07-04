@@ -14,7 +14,7 @@ def show_sponsors(sponsor_type=None):
 
         ret = {}
         for name in types_names:
-            ret['sponsors_'+name] = Sponsor.objects.filter(type=Sponsor.SPONSOR_TYPES_REV[name.upper()])
+            ret['sponsors_'+name] = Sponsor.objects.filter(type=Sponsor.SPONSOR_CATEGORIES_REV[name.upper()])
 
         return ret
 
