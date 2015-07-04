@@ -56,7 +56,12 @@ class Sponsor(models.Model):
         return cls.objects.filter(enabled=False)
 
 
-# TODO: Optionally logo size dependant on sponsor type
+# TODO: add more kind of representations (columns, with descriptions, titles, ...)
+# TODO: coverage 100%
+# TODO: test logo custom sizes
+# TODO: test logo sizes by cats
+# TODO: test background colors by cats
+# TODO: Become a Sponsor View
+# TODO: Become a Sponsor Form
 # TODO: Custom logo size and create thumbnail automatically
-# TODO: Sponsor Join View
-# TODO: Sponsor Forms: join
+
